@@ -1,0 +1,43 @@
+header{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+}
+
+nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+nav > button{
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    border-style: hidden;
+}
+body{
+    margin:0px;
+    background-image: url('./top-view-different-seasonings-with-fresh-vegetables-dark-surface-spicy-pepper-salad-health\ \(1\).jpg');
+    background-size:contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content{
+    width:100%;
+    height:80vh;
+}
+
+footer{
+    width: 100%;
+    height:10vh;
+    background-color: black;
+}
+
+footer > p{
+    color:white;
+}

@@ -46,6 +46,56 @@ plugins: [
         scriptLoading: 'defer', //if inject was head
     })
 ]
+```
+
+5. To load css, first install css loaders with: npm install --save-dev style-loader css-loader
+
+In the webpack.config file, add this module: 
+
+```javascript
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+```  
+Then in the javascript files, import the css file 
+```javascript
+import './style.css';
+```
+
+6. To add Images to your javascript and CSS files:
+
+Add this module to your webpack.config modules:
+
+```javascript
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+```
+
+In your javascript files:
+
+```javascript
+import image from './image.png';
+```
+
+In the CSS files:
+
+```CSS
+ .hello {
+  color: red;
+  background: url('./icon.png');
+ }
+ ```
+
+
+
+
 
 
 
