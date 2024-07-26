@@ -3,6 +3,10 @@ import rockImg from './images.jpg';
 export {createContent, clearContent};
 
 function createContent(content){
+
+    if (document.querySelector('.title')){
+        return;
+    }
     let title = document.createElement("div");
     let rockGolem = document.createElement("img");
     rockGolem.src = rockImg;
@@ -33,7 +37,7 @@ function createContent(content){
 }
 
 function clearContent(content){
-    if (!doccument.querySelector('.title')){
+    if (!document.querySelector('.title')){
         return;
     }
 
